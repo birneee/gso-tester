@@ -26,7 +26,7 @@ func main() {
 		panic(fmt.Errorf("GSO is not supported: %s", err.Error()))
 	}
 	if serr != nil {
-		panic(fmt.Errorf("GSO is not supported: %s", err.Error()))
+		panic(fmt.Errorf("GSO is not supported: %s", serr.Error()))
 	}
 	fmt.Printf("GSO is supported\n")
 }
